@@ -7,6 +7,8 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
     <title>travisrandall.io</title>
+    <!-- Fontawesome Icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Latest compiled and minified CSS -->
@@ -28,7 +30,15 @@
           <div class="inner cover">
             <img src="me.jpg" class="img-profile">
             <h1 class="cover-heading">Travis Randall</h1>
-            <p class="lead">Web Developer Assistant | <a href="http://spacedynamics.org">Space Dynamics Lab</a></p>
+            <p class="lead">
+              Web Developer Assistant | <a href="http://spacedynamics.org"> <img id="sdl-logo" src="sdl-white-logo.png"></a>
+            </p>
+            <p class="lead">
+              <a id="gh-icon" href="http://github.com/travis-randall"><i class="fa fa-github-square fa-2x"></i></a>
+              <a id="ln-icon" href="http://linkedin.com/in/travisfrandall"><i class="fa fa-linkedin-square fa-2x"></i></a>
+              <a id="fb-icon" href="http://facebook.com/tfrankdig"><i class="fa fa-facebook-square fa-2x"></i></a>
+              <a id="tw-icon" href="http://twitter.com/travisfrandall"><i class="fa fa-twitter-square fa-2x"></i></a>
+            </p>
             <p class="lead">
               <a href="mailto:travis.f.randall@gmail.com" class="btn btn-lg btn-default">Hire Me</a>
             </p>
@@ -43,4 +53,12 @@
       </div>
     </div>
   </body>
+  <script>
+$('#sdl-logo').mouseover(function() {
+  $(this).stop().fadeTo(500, 0.25);
+});
+$('#sdl-logo').mouseleave(function() {
+  $(this).stop().fadeTo(500, 1.0);
+});
+</script>
 </html>

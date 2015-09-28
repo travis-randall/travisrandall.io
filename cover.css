@@ -2,15 +2,90 @@
  * Globals
  */
 
+/* Cool test */
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
 /* profile image */
 .img-profile {
   height: 300px;
   border-radius: 50%;
+  box-shadow: 5px 5px 5px #2b2b2b;
+  transition: all 0.5s ease-in-out;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -o-filter: grayscale(1);
+  -ms-filter: grayscale(1);
 }
+
+.img-profile:hover {
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px #2b2b2b;
+  transition: all 0.5s ease-in-out;
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  -o-filter: grayscale(0);
+  -ms-filter: grayscale(0);
+}
+
+/* sdl-logo*/
+#sdl-logo {
+  height: 40px;
+  shape: auto;
+}
+
+/* For FontAwesome Icons */
+i {
+  padding: 2px;
+}
+
+#ln-icon {
+  transition: color .75s ease;
+  color: rgb(80, 80, 80);
+}
+
+#ln-icon:hover {
+  color: rgb(0, 119, 181);
+}
+
+#gh-icon {
+  transition: color .75s ease;
+  color: rgb(80, 80, 80)
+}
+
+#gh-icon:hover {
+  color: rgb(0, 0, 0);
+}
+
+#fb-icon {
+  transition: color .75s ease;
+  color: rgb(80, 80, 80);
+}
+
+#fb-icon:hover {
+  color: rgb(59, 89, 152);
+}
+
+#tw-icon {
+  transition: color .75s ease;
+  color: rgb(80, 80, 80);
+}
+
+#tw-icon:hover {
+  color: rgb(85, 172, 238);
+}
+
 /* Links */
 a,
 a:focus,
 a:hover {
+  text-decoration: none;
   color: #fff;
 }
 
@@ -62,53 +137,6 @@ body {
 .inner {
   padding: 30px;
 }
-
-
-/*
- * Header
- */
-.masthead-brand {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.masthead-nav > li {
-  display: inline-block;
-}
-.masthead-nav > li + li {
-  margin-left: 20px;
-}
-.masthead-nav > li > a {
-  padding-right: 0;
-  padding-left: 0;
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff; /* IE8 proofing */
-  color: rgba(255,255,255,.75);
-  border-bottom: 2px solid transparent;
-}
-.masthead-nav > li > a:hover,
-.masthead-nav > li > a:focus {
-  background-color: transparent;
-  border-bottom-color: #a9a9a9;
-  border-bottom-color: rgba(255,255,255,.25);
-}
-.masthead-nav > .active > a,
-.masthead-nav > .active > a:hover,
-.masthead-nav > .active > a:focus {
-  color: #fff;
-  border-bottom-color: #fff;
-}
-
-@media (min-width: 768px) {
-  .masthead-brand {
-    float: left;
-  }
-  .masthead-nav {
-    float: right;
-  }
-}
-
 
 /*
  * Cover
